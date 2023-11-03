@@ -3,22 +3,22 @@
 Bu oyun, JavaScript ile yazılmış basit bir kelime bulmaca oyunudur. Oyun, bir tablo kullanarak kelime bulmaca ızgarasını oluşturur ve kullanıcı ızgaradaki hücrelere tıklayarak ve tuşlara basarak bulmacayı çözebilir.
 ## pseudo code
 
-while True:
-  if kullanıcı hücreye tıkladıysa:
-    eğer hücre seçili değilse:
-      hücreyi seç
-      hücre arka plan rengini değiştir
-  if kullanıcı tuşa bastıysa:
-    eğer tuş yön tuşlarından biriyse:
-      nextMover() fonksiyonunu çağır
-    eğer tuş bir harf ise:
-      imleçteki hücrenin içeriğini basılan harfle değiştir
-    eğer tuş silme tuşu veya geri tuşu ise:
-      imleçteki hücrenin içeriğini temizle
-  if kullanıcı Check düğmesine tıkladıysa:
-    key_check() fonksiyonunu çağır doğru/yanlış kontrolü yap
-  if kullanıcı Clear düğmesine tıkladıysa:
-    color_clear() fonksiyonunu çağır yanlışları temizle
+- while True:
+  - if kullanıcı hücreye tıkladıysa:
+    - eğer hücre seçili değilse:
+      - hücreyi seç
+      - hücre arka plan rengini değiştir
+  - if kullanıcı tuşa bastıysa:
+    - eğer tuş yön tuşlarından biriyse:
+      - nextMover() fonksiyonunu çağır
+    - eğer tuş bir harf ise:
+      - imleçteki hücrenin içeriğini basılan harfle değiştir
+    - eğer tuş silme tuşu veya geri tuşu ise:
+      - imleçteki hücrenin içeriğini temizle
+  - if kullanıcı Check düğmesine tıkladıysa:
+    - key_check() fonksiyonunu çağır doğru/yanlış kontrolü yap
+  - if kullanıcı Clear düğmesine tıkladıysa:
+    - color_clear() fonksiyonunu çağır yanlışları temizle
 ## Oyun Algoritması
 
 Sayfa yüklendiğinde, createFrameBoxes() fonksiyonu çağrılır. Bu fonksiyon, bulmaca ızgarasını oluşturur.
