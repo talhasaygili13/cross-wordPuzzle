@@ -1,7 +1,7 @@
 # Crossword Puzzle
 
 Bu oyun, JavaScript ile yazılmış basit bir kelime bulmaca oyunudur. Oyun, bir tablo kullanarak kelime bulmaca ızgarasını oluşturur ve kullanıcı ızgaradaki hücrelere tıklayarak ve tuşlara basarak bulmacayı çözebilir.
-## pseudocode
+## pseudo code
 
 while True:
   if kullanıcı hücreye tıkladıysa:
@@ -21,8 +21,6 @@ while True:
     color_clear() fonksiyonunu çağır yanlışları temizle
 ## Oyun Algoritması
 
-Oyun, aşağıdaki algoritmayı kullanarak çalışır:
-
 Sayfa yüklendiğinde, createFrameBoxes() fonksiyonu çağrılır. Bu fonksiyon, bulmaca ızgarasını oluşturur.
 Kullanıcı bir hücreye tıkladığında, thElements.forEach() döngüsü çalıştırılır. Bu döngü, tüm hücrelerin sınıflarını kontrol eder ve tıklanan hücrenin seçilmiş olmadığından emin olur. Ardından, tıklanan hücrenin seçilmiş olması durumunda, hücrenin arka plan rengi değiştirilir.
 Kullanıcı bir tuşa bastığında, document.addEventListener() olay işleyicisi çalıştırılır. Bu olay işleyicisi, kullanıcının hangi tuşa bastığını kontrol eder ve aşağıdaki işlemleri gerçekleştirir:
@@ -32,7 +30,8 @@ Kullanıcı sil tuşuna veya geri tuşuna bastığında, imleçteki hücrenin i�
 Kullanıcı Check düğmesine bastığında, key_check() fonksiyonu çağrılır. Bu fonksiyon, tüm hücrelerin içeriklerini kontrol eder ve aşağıdaki işlemleri gerçekleştirir:
 Bir hücrenin içeriği doğruysa, hücrenin arka plan rengi yeşil yapılır.
 Bir hücrenin içeriği yanlışsa, hücrenin arka plan rengi kırmızı yapılır.
-Oyun Algoritmasının Açıklaması
+
+# Oyun Algoritmasının Açıklaması
 
 createFrameBoxes()` Fonksiyonu
 
@@ -46,14 +45,14 @@ thElements.forEach()` Döngüsü
 
 Bu döngü, tüm hücrelerin sınıflarını kontrol eder ve tıklanan hücrenin seçilmiş olmadığından emin olur. Ardından, tıklanan hücrenin seçilmiş olması durumunda, hücrenin arka plan rengini değiştirir.
 
-document.addEventListener()` Olay İşleyicisi
+document.addEventListener() Olay İşleyicisi
 
 Bu olay işleyicisi, kullanıcının hangi tuşa bastığını kontrol eder ve aşağıdaki işlemleri gerçekleştirir:
 
 Kullanıcı yön tuşlarından birine bastığında, nextMover() fonksiyonu çağrılır. Bu fonksiyon, imlecin bir sonraki hücreye taşınmasını sağlar.
 Kullanıcı büyük harflerden birine bastığında, imleçteki hücrenin içeriği girilen harfle değiştirilir.
 Kullanıcı sil tuşuna veya geri tuşuna bastığında, imleçteki hücrenin içeriği temizlenir.
-key_check()` Fonksiyonu
+key_check() Fonksiyonu
 
 Bu fonksiyon, tüm hücrelerin içeriklerini kontrol eder ve aşağıdaki işlemleri gerçekleştirir:
 
