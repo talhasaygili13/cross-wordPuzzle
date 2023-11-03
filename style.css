@@ -1,0 +1,81 @@
+body{
+    background-color: white;
+}
+table{
+    border: 1px solid black;
+}
+.w:hover{
+    background-color: darkgray;
+}
+th{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid gray;
+    position: relative;
+    cursor: grab;
+}
+
+.b{
+    background-color: black;
+    cursor: not-allowed;
+}
+
+.w{
+    background-color: white;
+}
+
+th span{
+    font-size: 10px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+th b{
+    font-size: 40px;
+    color: green;
+}
+
+.selected {
+    background-color: darkgray;
+    font: 1em sans-serif;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    background-color: darkgrey;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+section{
+    display: flex;
+}
+
+
+#across{
+    margin: 40px;
+    background-color: lightgrey;
+}
+#down{
+    margin: 40px;
+    background-color: lightgrey;
+    height: 30%;
+}
+#across:hover{
+    background-color: gray;
+    color: #fff;
+}
+
+#down:hover{
+    background-color: gray;
+    color: #fff;
+}
