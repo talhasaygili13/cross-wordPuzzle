@@ -1,7 +1,7 @@
 # Crossword Puzzle
 
 Bu oyun, JavaScript ile yazılmış basit bir kelime bulmaca oyunudur. Oyun, bir tablo kullanarak kelime bulmaca ızgarasını oluşturur ve kullanıcı ızgaradaki hücrelere tıklayarak ve tuşlara basarak bulmacayı çözebilir.
-## pseudo code
+# pseudo code
 
 - while True:
   - if kullanıcı hücreye tıkladıysa:
